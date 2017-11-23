@@ -1,4 +1,0 @@
-[submodule "assignments"]
-	path = assignments
-	url = git@bitbucket.org:iquestuniversity/assignments.git
-	branch = master
