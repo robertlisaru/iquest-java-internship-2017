@@ -1,0 +1,21 @@
+1)   Identify the objects from the text above and create the class diagram for them. The classes should have attributes and methods that should be extracted from the text. [10 points]
+
+   - no diagram 
+
+Total 0p
+
+2)   Create a main class in which you instantiate all the defined classes. [10 points]
+
+     - the program works - 1p
+     - all objects are instantiated and used -5p
+
+Notes: 
+- can not compare the program to the diagram
+- no base class identified
+- clean unused methods and members
+- no move operation  
+- use interface type private List<String> tags; instead of private ArrayList<String> tags;
+
+Total 6p
+
+Total home work = 6p
