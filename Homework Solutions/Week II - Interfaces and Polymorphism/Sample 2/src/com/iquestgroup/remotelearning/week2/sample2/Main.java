@@ -6,15 +6,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<Product> products = new ArrayList<>();
-        products.add(new Phone());
+        List<FoodProduct> products = new ArrayList<>();
         products.add(new Chocolate());
 
         printExpirationDateStatistics(products);
     }
 
-    private static void printExpirationDateStatistics(List<Product> foodProducts) {
-        for (Product product : foodProducts) {
+    private static void printExpirationDateStatistics(List<FoodProduct> foodProducts) {
+        for (FoodProduct product : foodProducts) {
             System.out.println(product.getExpirationDate());
         }
     }

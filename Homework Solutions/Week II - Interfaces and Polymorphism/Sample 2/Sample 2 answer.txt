@@ -1,1 +1,0 @@
-I have deleted the methods in the derived classes that were overriding methods in the base class Product.
