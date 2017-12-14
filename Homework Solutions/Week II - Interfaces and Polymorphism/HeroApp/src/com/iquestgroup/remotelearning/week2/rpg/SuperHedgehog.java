@@ -42,7 +42,7 @@ public class SuperHedgehog extends Actor {
                 "\nArmor: " + armor + "\n";
     }
 
-    public SuperHedgehog(int attackDamage, int armor, int maxHealth) {
+    SuperHedgehog(int attackDamage, int armor, int maxHealth) {
         super(attackDamage, armor, maxHealth);
         race = this.getClass().getSimpleName();
         experienceBounty = 80;

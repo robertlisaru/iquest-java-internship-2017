@@ -38,7 +38,7 @@ public class Wolf extends Actor {
                 "\nArmor: " + armor + "\n";
     }
 
-    public Wolf(int attackDamage, int armor, int maxHealth) {
+    Wolf(int attackDamage, int armor, int maxHealth) {
         super(attackDamage, armor, maxHealth);
         race = this.getClass().getSimpleName();
         experienceBounty = 50;

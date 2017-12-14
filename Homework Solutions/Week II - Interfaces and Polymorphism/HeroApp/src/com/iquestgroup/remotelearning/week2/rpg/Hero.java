@@ -67,7 +67,7 @@ public class Hero extends Actor {
                 "\nArmor: " + armor + "\n";
     }
 
-    public Hero(int attackDamage, int armor, int maxHealth, String name) {
+    Hero(int attackDamage, int armor, int maxHealth, String name) {
         super(attackDamage, armor, maxHealth);
         this.name = name;
         System.out.println(this);

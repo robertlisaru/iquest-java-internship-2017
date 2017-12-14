@@ -12,18 +12,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Actor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Actor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="method#basicAttack#0;class#Actor#0" expanded="false" />
+                <element signature="method#receiveDamage#0;class#Actor#0" expanded="false" />
+                <element signature="method#Actor#0;class#Actor#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -32,11 +29,15 @@
       <file leaf-file-name="Hero.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="449">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
-                <element signature="e#1734#1735#0" expanded="true" />
-                <element signature="e#1761#1762#0" expanded="true" />
+                <element signature="method#basicAttack#0;class#Hero#0" expanded="false" />
+                <element signature="method#levelUP#0;class#Hero#0" expanded="false" />
+                <element signature="method#specialAttack#0;class#Hero#0" expanded="false" />
+                <element signature="method#die#0;class#Hero#0" expanded="false" />
+                <element signature="method#toString#0;class#Hero#0" expanded="false" />
+                <element signature="method#Hero#0;class#Hero#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,22 +46,30 @@
       <file leaf-file-name="Wolf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Wolf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+            <state relative-caret-position="357">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
+                <element signature="method#specialAttack#0;class#Wolf#0" expanded="false" />
+                <element signature="method#die#0;class#Wolf#0" expanded="false" />
+                <element signature="method#toString#0;class#Wolf#0" expanded="false" />
+                <element signature="method#Wolf#0;class#Wolf#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuperHedgehog.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SuperHedgehog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/SuperHedgehog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="method#specialAttack#0;class#SuperHedgehog#0" expanded="false" />
+                <element signature="method#receiveDamage#0;class#SuperHedgehog#0" expanded="false" />
+                <element signature="method#die#0;class#SuperHedgehog#0" expanded="false" />
+                <element signature="method#toString#0;class#SuperHedgehog#0" expanded="false" />
+                <element signature="method#SuperHedgehog#0;class#SuperHedgehog#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,8 +77,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,11 +107,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hedgehog.java" />
-        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hero.java" />
-        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/SuperHedgehog.java" />
         <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Actor.java" />
+        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hero.java" />
         <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Wolf.java" />
+        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/SuperHedgehog.java" />
+        <option value="$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Actor.java" />
       </list>
     </option>
   </component>
@@ -112,7 +121,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1260" />
@@ -302,15 +311,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513197944118</updated>
-      <workItem from="1513197945564" duration="11892000" />
+      <workItem from="1513197945564" duration="13726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11892000" />
+    <option name="totallyTimeSpent" value="13726000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="786" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -321,7 +330,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20919175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.004754358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -353,56 +362,65 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="e#1734#1735#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Actor.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/SuperHedgehog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="method#specialAttack#0;class#SuperHedgehog#0" expanded="false" />
+            <element signature="method#receiveDamage#0;class#SuperHedgehog#0" expanded="false" />
+            <element signature="method#die#0;class#SuperHedgehog#0" expanded="false" />
+            <element signature="method#toString#0;class#SuperHedgehog#0" expanded="false" />
+            <element signature="method#SuperHedgehog#0;class#SuperHedgehog#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Wolf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        <state relative-caret-position="357">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
+            <element signature="method#specialAttack#0;class#Wolf#0" expanded="false" />
+            <element signature="method#die#0;class#Wolf#0" expanded="false" />
+            <element signature="method#toString#0;class#Wolf#0" expanded="false" />
+            <element signature="method#Wolf#0;class#Wolf#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/SuperHedgehog.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="method#basicAttack#0;class#Hero#0" expanded="false" />
+            <element signature="method#levelUP#0;class#Hero#0" expanded="false" />
+            <element signature="method#specialAttack#0;class#Hero#0" expanded="false" />
+            <element signature="method#die#0;class#Hero#0" expanded="false" />
+            <element signature="method#toString#0;class#Hero#0" expanded="false" />
+            <element signature="method#Hero#0;class#Hero#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iquestgroup/remotelearning/week2/rpg/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding />
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="method#basicAttack#0;class#Actor#0" expanded="false" />
+            <element signature="method#receiveDamage#0;class#Actor#0" expanded="false" />
+            <element signature="method#Actor#0;class#Actor#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

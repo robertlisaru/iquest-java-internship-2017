@@ -16,8 +16,6 @@ public abstract class Actor {
         }
     }
 
-    public abstract void specialAttack(Actor target);
-
     public void receiveDamage(int damage, Actor attacker) {
         int effectiveDamage = damage > armor ? (damage - armor) : 0;
         health -= effectiveDamage;
@@ -26,10 +24,6 @@ public abstract class Actor {
             die();
         }
     }
-
-    public abstract String getName();
-
-    public abstract void die();
 
     public boolean isDead() {
         return dead;
@@ -42,6 +36,12 @@ public abstract class Actor {
     public int getExperienceBounty() {
         return experienceBounty;
     }
+
+    public abstract void specialAttack(Actor target);
+
+    public abstract String getName();
+
+    public abstract void die();
 
     public Actor(int attackDamage, int armor, int maxHealth) {
         this.strength = attackDamage;
