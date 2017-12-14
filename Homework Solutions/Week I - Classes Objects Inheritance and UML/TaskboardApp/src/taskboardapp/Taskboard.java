@@ -6,26 +6,36 @@
 package taskboardapp;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Taskboard {
 
     private Integer taskBoardID;
-    private ArrayList<ICard> cardList;
+    private Map<String, Card> cards;
 
     Taskboard(Integer taskBoardID) {
         this.taskBoardID = taskBoardID;
-        cardList = new ArrayList<>();
+        cards = new HashMap<>();
     }
 
-    public void addCard(ICard card) {
-        cardList.add(card);
+    public void addCard(Card card) {
+        cards.put(card.getTitle(), card);
+    }
+
+    public void removeCard(String key){
+        cards.remove(key);
+    }
+
+    public void setState(int index, TaskState state){
+
     }
 
     public void print() {
         System.out.println("Cards: \n");
-        for (ICard card : cardList) {
-            System.out.println(card);
+        for (String key : cards.keySet()) {
+            System.out.println(cards.get(key));
         }
     }
-
 }

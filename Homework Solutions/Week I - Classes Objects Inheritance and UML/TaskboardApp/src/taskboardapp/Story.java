@@ -11,26 +11,31 @@ package taskboardapp;
  * short description of the story and estimation in story points.
  * This card can be present only on the ‘Stories’ column.
  */
-public class Story implements ICard {
+public class Story extends Card {
 
-    private String color;
-    private String storyTitle;
-    private String storyDescription;
-    private Integer storyPoints;
+    private String color = "yellow";
+    private Integer points;
 
     @Override
     public String toString() {
-        return "Story title: " + storyTitle + "\n" + "Description: " + storyDescription + "\nSP: "
-                + storyPoints.toString() + "\nColor: " + color + "\n";
+        return "Story title: " + title + "\n" + "Description: " + description + "\nSP: "
+                + points.toString() + "\nColor: " + color + "\n";
     }
 
-    public Story(String color, String storyTitle, String storyDescription, Integer storyPoints) {
+    public Story(String color, String title, String description, Integer points) {
+        super(title, description);
         this.color = color;
-        this.storyTitle = storyTitle;
-        this.storyDescription = storyDescription;
-        this.storyPoints = storyPoints;
+        this.points = points;
     }
 
     public Story() {
+    }
+
+    public Integer getPoints() {
+        return points;
+    }
+
+    public void setPoints(Integer points) {
+        this.points = points;
     }
 }

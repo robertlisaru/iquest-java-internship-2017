@@ -6,6 +6,7 @@
 package taskboardapp;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Week I - Homework.docx:
@@ -16,44 +17,44 @@ import java.util.ArrayList;
  * This type of card can be moved between columns (other than the ‘Stories’ column where it cannot be present).
  */
 
-public class Task implements ICard {
+public class Task extends Card {
 
-    private String taskTitle;
-    private String taskDescription;
     private Integer hoursLeft;
-    private Boolean isBlocked;
+    private Boolean blocked;
     private String blockReason;
-    private TaskState taskState;
-    private ArrayList<String> tags;
+    private TaskState state;
+    private List<String> tags = new ArrayList<>();
     private Developer devWorking;
     private Developer devReviewing;
 
-    public void Block(String blockReason) {
-        isBlocked = true;
+    public void block(String blockReason) {
+        blocked = true;
         this.blockReason = blockReason;
     }
 
-    public void Unblock() {
-        isBlocked = false;
+    public void unblock() {
+        blocked = false;
         blockReason = null;
     }
 
-    public void changeState(TaskState taskState) {
-        this.taskState = taskState;
+    public void setState(TaskState state) {
+        if (!isBlocked()) {
+            this.state = state;
+        }
     }
 
-    public void addTag(String taskTag) {
-        tags.add(taskTag);
+    public void addTag(String tag) {
+        tags.add(tag);
     }
 
     @Override
     public String toString() {
         String returnString;
-        returnString = "Task title: " + taskTitle + "\n" + "Description: " + taskDescription + "\n"
+        returnString = "Task title: " + title + "\n" + "Description: " + description + "\n"
                 + "Hours left: " + hoursLeft + "\n";
         returnString += "Developer: ";
         returnString += (devWorking.getName() + "\n");
-        if (isBlocked) {
+        if (blocked) {
             returnString += (blockReason + "\n");
         }
         returnString += "Tags: ";
@@ -63,18 +64,57 @@ public class Task implements ICard {
         return returnString + "\n";
     }
 
-    public Task(String taskTitle, String taskDescription, Integer hoursLeft,
-                TaskState taskState, Developer devWorking, Developer devReviewing) {
-        this.taskTitle = taskTitle;
-        this.taskDescription = taskDescription;
+    public Task(String title, String description, Integer hoursLeft,
+                TaskState state, Developer devWorking, Developer devReviewing) {
+        super(title, description);
         this.hoursLeft = hoursLeft;
-        this.taskState = taskState;
+        this.state = state;
         this.devWorking = devWorking;
         this.devReviewing = devReviewing;
         tags = new ArrayList<>();
-        isBlocked = false;
+        blocked = false;
     }
 
     public Task() {
+    }
+
+    public Integer getHoursLeft() {
+        return hoursLeft;
+    }
+
+    public void setHoursLeft(Integer hoursLeft) {
+        this.hoursLeft = hoursLeft;
+    }
+
+    public Boolean isBlocked() {
+        return blocked;
+    }
+
+    public TaskState getState() {
+        return state;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public Developer getDevWorking() {
+        return devWorking;
+    }
+
+    public void setDevWorking(Developer devWorking) {
+        this.devWorking = devWorking;
+    }
+
+    public Developer getDevReviewing() {
+        return devReviewing;
+    }
+
+    public void setDevReviewing(Developer devReviewing) {
+        this.devReviewing = devReviewing;
     }
 }

@@ -1,0 +1,14 @@
+This sample contains the java implementation of some file parsers.
+
+Look what classes were created and the relations between them
+Where is polymorphism used?
+
+
+ANSWER: 
+
+In the FileParser that doesn't use polymorphism we have a "parse" method that takes as parameter a file extension then checks using if-else statements what specific method can parse that file type.
+When we want to add a new file parser we need to create a new parsing method, then add a new if-else statement to check for it, so we need access to modify code in the FileParser class, which has to be then recompiled.
+
+
+The FileParser class that uses polymorphism contains a list of elements of type "Parser" (an abstract class with an abstract method "parse"). Searching for the appropiate parser and calling it is now done using a polymorphic mechanism.
+When we want to add a new file parser we need to create a new class that extends "Parser" and overrides the "parse" abstract method, then add it to the list of parsers by calling "registerParser". We don't need to modify code in the FileParser class, so it doesn't have to be recompiled. 
