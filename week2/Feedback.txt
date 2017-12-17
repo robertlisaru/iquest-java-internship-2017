@@ -1,0 +1,45 @@
+1. Refactor sample 2 such that it respects OOP principles (mainly Liskov substitution) [5p]
+
+    Liskov substiturion principle is respected 3p
+
+    Used inheritance to solve the problem 2p
+
+Notes:
+- clean unused imports
+- clean comments
+- a general rule for proper encapsulation implementation is to always start declaring the members as private and increase the visibility if it is demanded
+
+Total 5p
+
+2. Draw an UML diagram of the final solution. [5p]
+
+    The diagram is correct from the UML point-of-view 1p
+
+    All classes (except Main/Test) are present 3p
+
+    All classes from the diagram match the classes from the code 1p
+
+Total 5p
+
+3. OoRpg (see below) [10p]
+
+    identify classes: Hero, Monster 2p
+
+    group Hero and Monster common attributes into a common Character base class 2p
+
+    have at least one Monster sub-class for a specific race; do not instantiate Monster directly [1p]
+
+    makes proper use of polymorphism [2.5p]
+
+    class with main-method exists and runs with no errors [1.5p]
+
+Notes:
+ - no need for 2 types of attacks. A better desing whould have been to define an Attacker interface with one attack(Actor) method as possible there are actors that can not attack.
+   In your game any actor can attack.
+ - good usage of polymophism as the attack and being attacked behaviour are defined in the classes themselfs
+
+Total 9p
+
+total homework 19p   
+
+
