@@ -1,12 +1,12 @@
 package com.iquestint.ju;
 
-import static junit.framework.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class MyListTest {
 
@@ -53,14 +53,27 @@ public class MyListTest {
     public void testAddNonIntegerValue() {
         exception.expect(exceptionType);
         exception.expectMessage("Invalid number.");
-        list.add("Hey, I'm not an integer.");
+
+        try {
+            list.add("Hey, I'm not an integer.");
+        } catch (StringListOperationException e) {
+            assertEquals(StringListErrorCode.INVALID_NUMBER_FORMAT, e.getErrorCode());
+            assertEquals(102, e.getErrorCode().getErrorNumber());
+            throw e;
+        }
     }
 
     @Test
-    public void testAddNonNullValue() {
+    public void testAddNullValue() {
         exception.expect(exceptionType);
         exception.expectMessage("Null");
-        list.add(null);
+        try {
+            list.add(null);
+        } catch (StringListOperationException e) {
+            assertEquals(StringListErrorCode.NULL_ELEMENT, e.getErrorCode());
+            assertEquals(101, e.getErrorCode().getErrorNumber());
+            throw e;
+        }
     }
 
     @Test
@@ -68,6 +81,12 @@ public class MyListTest {
         initData();
         exception.expect(exceptionType);
         exception.expectMessage("Index out of bounds.");
-        list.get(initData.length);
+        try {
+            list.get(initData.length);
+        } catch (StringListOperationException e) {
+            assertEquals(StringListErrorCode.INDEX_OUT_OF_BOUNDS, e.getErrorCode());
+            assertEquals(103, e.getErrorCode().getErrorNumber());
+            throw e;
+        }
     }
 }
